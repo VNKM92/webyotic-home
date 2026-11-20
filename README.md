@@ -1,58 +1,196 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🚀 Webyotic - Web Development & Digital Solutions
+### *We Build Websites. We Grow Businesses.*
 
-## About Laravel
+[![Laravel](https://img.shields.io/badge/Laravel-13.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![React](https://img.shields.io/badge/React-19.x-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![PHP](https://img.shields.io/badge/PHP-8.4-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![Deploy to Render](https://img.shields.io/badge/Deploy%20to-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<br/>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+### 📸 Visual Design Showcase
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![Webyotic Landing Page Preview](docs/preview.jpg)
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+</div>
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+---
 
-## Agentic Development
+## 📖 Overview
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+**Webyotic** is a production-ready, high-converting digital agency landing page built with **Laravel 13**, **React.js 19**, and **Tailwind CSS v4**. It features modern micro-interactions, an instant project quote estimator, a lead capture system connected to a SQLite/MySQL database, interactive case study modals, and 1-click **Render** cloud deployment configuration.
 
-```bash
-composer require laravel/boost --dev
+---
 
-php artisan boost:install
+## ✨ Features
+
+- 🎯 **Pixel-Perfect Visual Hierarchy**: High-contrast typography with DM Sans & Plus Jakarta Sans, vibrant gradients, and subtle glassmorphism.
+- 📱 **100% Mobile & Tablet Responsive**: Seamlessly adapts from small mobile screens (320px) to ultra-wide 4K desktop displays.
+- 💬 **WhatsApp & Direct Calling**: One-click WhatsApp consultation integration with pre-filled enquiry messages.
+- 🛠️ **Interactive Services Showcase**: 6 core service modules (`Website Development`, `Laravel Development`, `WordPress Development`, `E-Commerce`, `SEO & Marketing`, `Hosting & Support`) with popup detail modals.
+- 💼 **Filterable Portfolio Carousel**: Interactive project category filter with case studies (`TMS Logistics Management`, `CineLaddoo`, `Hubflix`, `Job Portal`, `Restaurant Booking`, `QuickShop E-Commerce`).
+- 💰 **Transparent Pricing with Currency Switcher**: Real-time switch between **INR (₹)** and **USD ($)** pricing.
+- 🧮 **Instant Interactive Quote Estimator Modal**: Prospective clients can configure project scope, pages, and addons to calculate an estimated budget.
+- 📬 **Live Lead Generation System**: Validated contact form connected to Laravel API endpoint (`/api/contact`) with database persistence and celebration confetti.
+- ⚡ **Zero-Config Standalone HTML Option**: Includes `public/landing.html` and `public/index_standalone.html` for instant client previews without running a web server.
+- ☁️ **Render Cloud Deployment Ready**: Preconfigured with `render.yaml`, `Dockerfile`, `build.sh`, and `/health` monitoring.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **Backend Framework** | Laravel 13.x (PHP 8.4) |
+| **Frontend UI** | React 19.x & Vite 8 |
+| **Styling** | Tailwind CSS v4.0 |
+| **Icons** | Lucide React |
+| **Database** | SQLite (Default for zero-config deployment) / MySQL |
+| **Animations** | CSS Keyframes & Canvas-Confetti |
+| **Deployment** | Render Web Services (Docker & Native PHP Runtime) |
+
+---
+
+## 📂 Project Directory Structure
+
+```plaintext
+webyotic-home/
+├── app/
+│   ├── Http/Controllers/
+│   │   └── ContactController.php   # Handles contact form submissions & health check
+│   └── Models/
+│       └── ContactLead.php         # Eloquent Model for client enquiries
+├── config/                         # Laravel application configs
+├── database/
+│   └── migrations/                 # Migrations including contact_leads table
+├── docs/
+│   └── preview.jpg                 # Full visual design preview
+├── public/
+│   ├── build/                      # Compiled production CSS & JS assets
+│   ├── landing.html                # Standalone single-file HTML preview
+│   └── index_standalone.html       # Static client distribution
+├── resources/
+│   ├── css/
+│   │   └── app.css                 # Tailwind CSS v4 & custom utility layer
+│   ├── js/
+│   │   ├── app.jsx                 # React root mount entry point
+│   │   └── LandingPage.jsx         # Full interactive React application
+│   └── views/
+│       └── landing.blade.php       # Blade wrapper with SEO meta tags & Vite tags
+├── routes/
+│   └── web.php                     # Web routes (/, /api/contact, /health, /up)
+├── build.sh                        # Production Render deployment build script
+├── DEPLOYMENT.md                   # Step-by-step deployment guide
+├── Dockerfile                      # Multi-stage production container
+├── render.yaml                     # Render 1-click Blueprint configuration
+└── vite.config.js                  # Vite configuration for Laravel + React + Tailwind
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## ⚡ Quick Start (Local Setup)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Prerequisites
+- **PHP** >= 8.2 (PHP 8.4 recommended)
+- **Composer** >= 2.0
+- **Node.js** >= 20.x and **npm**
 
-## Code of Conduct
+### 1. Clone the repository
+```bash
+git clone https://github.com/VNKM92/webyotic-home.git
+cd webyotic-home
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 2. Install PHP and Node dependencies
+```bash
+composer install
+npm install
+```
 
-## Security Vulnerabilities
+### 3. Setup environment and database
+```bash
+cp .env.example .env
+php artisan key:generate
+touch database/database.sqlite
+php artisan migrate
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 4. Build assets and start development server
+```bash
+# Build frontend assets
+npm run build
 
-## License
+# Start Laravel backend server
+php artisan serve
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Visit **[http://127.0.0.1:8000](http://127.0.0.1:8000)** in your browser!
+
+> **Live React Development**: Run `npm run dev` in a separate terminal for Hot Module Replacement (HMR).
+
+---
+
+## ☁️ Deploy to Render in 2 Steps
+
+### Option A: Render 1-Click Blueprint (Recommended)
+1. Go to [dashboard.render.com](https://dashboard.render.com).
+2. Click **New +** → **Blueprint**.
+3. Connect your repository: `https://github.com/VNKM92/webyotic-home.git`.
+4. Render will read `render.yaml` automatically and configure:
+   - **Runtime**: `PHP`
+   - **Build Command**: `./build.sh`
+   - **Start Command**: `php artisan serve --host=0.0.0.0 --port=$PORT`
+   - **Health Check**: `/health`
+5. Click **Apply** to deploy!
+
+### Option B: Docker Web Service
+1. Click **New +** → **Web Service**.
+2. Select repository and choose **Docker** runtime.
+3. Render will build the included multi-stage `Dockerfile`.
+
+---
+
+## 🧪 Testing
+
+Run automated PHPUnit tests:
+```bash
+php artisan test
+```
+
+All 6 test cases verifying views, API endpoints, validations, and database entries will pass:
+```plaintext
+ PASS  Tests\Feature\ExampleTest
+ ✓ the application returns a successful response
+
+ PASS  Tests\Feature\LandingPageTest
+ ✓ landing page renders successfully
+ ✓ health check endpoint
+ ✓ contact lead submission success
+ ✓ contact lead validation fails on missing fields
+
+ Tests:    6 passed (16 assertions)
+ Duration: 0.54s
+```
+
+---
+
+## 📞 Contact Information
+
+- **Brand**: Webyotic - Web Development & Digital Solutions
+- **Email**: [hello@webyotic.com](mailto:hello@webyotic.com)
+- **Phone / WhatsApp**: [+91 98765 43210](tel:+919876543210)
+- **Location**: Ludhiana, Punjab, India
+- **Tagline**: *We Build Websites. We Grow Businesses.*
+
+---
+
+## 📄 License
+This project is open-sourced software licensed under the [MIT License](LICENSE).
