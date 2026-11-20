@@ -31,7 +31,12 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2306b6d4'/><stop offset='50%25' stop-color='%23245cff'/><stop offset='100%25' stop-color='%23743bff'/></linearGradient></defs><rect width='100' height='100' rx='25' fill='url(%23g)'/><path d='M25 32 L36 72 L49 42 L62 72 L73 32 L63 32 L55 58 L46 36 L39 58 L33 32 Z' fill='white'/></svg>">
-
+   <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-W745KQZP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    </script>
     <script>
         window.webyoticConfig = {
             csrfToken: '{{ csrf_token() }}',
